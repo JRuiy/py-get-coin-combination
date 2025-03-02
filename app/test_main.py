@@ -26,5 +26,8 @@ from app.main import get_coin_combination
         "should return only quarters for value % 25 == 0",
     ]
 )
-def test_get_coin_combination_correctly(cents: int, expected_result: list):
+def test_get_coin_combination_correctly(
+        cents: int,
+        expected_result: list
+) -> None:
     assert get_coin_combination(cents) == expected_result
